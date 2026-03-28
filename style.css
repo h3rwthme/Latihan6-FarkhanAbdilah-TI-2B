@@ -1,0 +1,256 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+.box-background1 {
+    background-color: lightblue;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+.box-background2 {
+    background-color: #f0e68c;
+    border: 2px solid orange;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+.border-solid {
+    border: 2px solid black;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.border-dashed {
+    border: 2px dashed red;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.border-radius {
+    border: 2px solid steelblue;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.box-margin {
+    background-color: #d5f5e3;
+    border: 1px solid green;
+    margin: 20px;
+    padding: 10px;
+}
+
+.box-padding {
+    background-color: #fde8d8;
+    border: 1px solid orange;
+    margin: 5px;
+    padding: 30px;
+}
+
+.teks-1 {
+    font-family: Georgia, serif;
+    font-size: 20px;
+    color: darkgreen;
+}
+
+.teks-2 {
+    text-align: center;
+    font-style: italic;
+    letter-spacing: 3px;
+    color: #555;
+}
+
+.teks-3 {
+    text-decoration: underline;
+    font-weight: bold;
+    color: darkblue;
+}
+
+.box-ukuran1 {
+    width: 200px;
+    height: 80px;
+    background-color: lightcoral;
+    padding: 10px;
+    margin: 10px 0;
+    line-height: 60px;
+}
+
+.box-ukuran2 {
+    width: 100%;
+    height: 50px;
+    background-color: lightseagreen;
+    padding: 10px;
+    margin: 10px 0;
+    line-height: 30px;
+    color: white;
+}
+
+.span-block {
+    display: block;
+    background-color: #eee;
+    padding: 8px;
+    margin-bottom: 5px;
+}
+
+.span-inline-block {
+    display: inline-block;
+    background-color: steelblue;
+    color: white;
+    padding: 8px 15px;
+    margin: 3px;
+}
+
+.link-hover {
+    color: steelblue;
+    font-size: 16px;
+}
+
+.link-hover:hover {
+    color: red;
+    text-decoration: none;
+}
+
+.list-kotak {
+    list-style-type: square;
+    color: steelblue;
+    padding-left: 20px;
+}
+
+.list-kotak li {
+    margin: 5px 0;
+}
+
+.list-angka {
+    list-style-type: decimal;
+    color: #333;
+    padding-left: 20px;
+}
+
+.list-angka li {
+    margin: 5px 0;
+}
+
+.box-transition {
+    background-color: steelblue;
+    color: white;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    margin: 10px 0;
+    transition: background-color 0.5s, width 0.5s;
+}
+
+.box-transition:hover {
+    background-color: #e74c3c;
+    width: 300px;
+}
+
+@keyframes gerak {
+    0%   { margin-left: 0px; background-color: steelblue; }
+    50%  { margin-left: 200px; background-color: coral; }
+    100% { margin-left: 0px; background-color: steelblue; }
+}
+
+.box-animasi {
+    width: 150px;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    background-color: steelblue;
+    animation: gerak 3s infinite;
+    margin: 10px 0;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: #eee;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.flex-item {
+    background-color: steelblue;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.grid-item {
+    background-color: steelblue;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.resp-container {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.resp-box {
+    flex: 1;
+    background-color: steelblue;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .flex-item {
+        width: 100%;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .resp-container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+}
