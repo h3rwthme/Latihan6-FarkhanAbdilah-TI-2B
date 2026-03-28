@@ -1,0 +1,1 @@
+# Latihan6-FarkhanAbdilah-TI-2B
