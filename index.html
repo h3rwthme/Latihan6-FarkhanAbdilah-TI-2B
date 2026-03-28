@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar CSS - Tugas Semester 1</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        h1 {
+            color: rgb(107, 24, 8);
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        h2 {
+            color: #333;
+            border-bottom: 2px solid steelblue;
+            padding-bottom: 5px;
+        }
+
+        .kotak-info {
+            background-color: #e8f4f8;
+            border-left: 5px solid steelblue;
+            padding: 10px 15px;
+            margin: 10px 0;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        table, th, td {
+            border: 1px solid #aaa;
+        }
+
+        th {
+            background-color: steelblue;
+            color: white;
+            padding: 8px;
+            text-align: left;
+        }
+
+        td {
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .tombol {
+            background-color: steelblue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .tombol:hover {
+            background-color: #1a5276;
+        }
+
+        @keyframes masuk {
+            from { opacity: 0; margin-top: -20px; }
+            to   { opacity: 1; margin-top: 0px; }
+        }
+
+        .judul-animasi {
+            animation: masuk 1s ease;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="judul-animasi">Belajar CSS - Tugas Pemrograman Web</h1>
+    <p style="text-align: center; color: gray;">Nama: Farkhan Abdilah | NIM: 2507411012 | Semester 2 TI-B</p>
+
+    <div class="container">
+
+        <h2>1. CSS Colors (Tutorial)</h2>
+        <div class="kotak-info">
+            <p>CSS Colors digunakan untuk memberi warna pada teks, background, dan border.</p>
+        </div>
+
+        <p style="color: red;">Ini teks warna merah (inline)</p>
+        <p style="color: green;">Ini teks warna hijau (inline)</p>
+        <p style="color: #1a5276; font-weight: bold;">Ini teks warna biru tua pakai kode hex (inline)</p>
+        <p style="background-color: yellow; padding: 5px;">Ini background kuning (inline)</p>
+
+        <hr>
+
+        <h2>2. CSS Backgrounds (Tutorial)</h2>
+        <div class="kotak-info">
+            <p>Properti background digunakan untuk mengatur latar belakang elemen.</p>
+        </div>
+
+        <div class="box-background1">background-color: lightblue</div>
+        <div class="box-background2">background-color: #f0e68c + border</div>
+
+        <hr>
+
+        <h2>3. CSS Borders (Tutorial)</h2>
+        <div class="kotak-info">
+            <p>CSS Border untuk memberi garis tepi pada elemen.</p>
+        </div>
+
+        <div class="border-solid">border: 2px solid black</div>
+        <div class="border-dashed">border: 2px dashed red</div>
+        <div class="border-radius">border-radius: 10px</div>
+
+        <hr>
+
+        <h2>4. CSS Margins & Padding (Tutorial)</h2>
+        <div class="kotak-info">
+            <p>Margin = jarak di luar elemen. Padding = jarak di dalam elemen.</p>
+        </div>
+
+        <div class="box-margin">Kotak dengan margin: 20px</div>
+        <div class="box-padding">Kotak dengan padding: 30px</div>
+
+        <hr>
+
+        <h2>5. CSS Text & Fonts (Tutorial)</h2>
+        <div class="kotak-info">
+            <p>Mengatur jenis huruf, ukuran, dan gaya teks.</p>
+        </div>
+
+        <p class="teks-1">font-family: Georgia | font-size: 20px | color: darkgreen</p>
+        <p class="teks-2">text-align: center | font-style: italic | letter-spacing: 3px</p>
+        <p class="teks-3">text-decoration: underline | font-weight: bold</p>
+
+        <hr>
+
+        <h2>6. CSS Height & Width (Tutorial)</h2>
+        <div class="kotak-info">
+            <p>Mengatur ukuran lebar dan tinggi suatu elemen.</p>
+        </div>
+
+        <div class="box-ukuran1">width: 200px | height: 80px</div>
+        <div class="box-ukuran2">width: 100% | height: 50px</div>
+
+        <hr>
+
+        <h2>7. CSS Table (Tutorial)</h2>
+        <div class="kotak-info">
+            <p>Mengatur tampilan tabel agar lebih rapi.</p>
+        </div>
+
+        <table>
+            <tr>
+                <th>Nama</th>
+                <th>Nilai</th>
+                <th>Keterangan</th>
+            </tr>
+            <tr>
+                <td>Budi</td>
+                <td>85</td>
+                <td>Lulus</td>
+            </tr>
+            <tr>
+                <td>Sari</td>
+                <td>90</td>
+                <td>Lulus</td>
+            </tr>
+            <tr>
+                <td>Doni</td>
+                <td>55</td>
+                <td>Tidak Lulus</td>
+            </tr>
+        </table>
+
+        <hr>
+
+        <h2>8. CSS Display (Tutorial)</h2>
+        <div class="kotak-info">
+            <p>Display mengatur bagaimana elemen ditampilkan di halaman.</p>
+        </div>
+
+        <span class="span-block">Ini span dengan display: block</span>
+        <span class="span-inline-block">Kotak 1</span>
+        <span class="span-inline-block">Kotak 2</span>
+        <span class="span-inline-block">Kotak 3</span>
+
+        <hr>
+
+        <h2>9. CSS Pseudo-class & Hover (Tutorial)</h2>
+        <div class="kotak-info">
+            <p>Pseudo-class digunakan untuk menambah efek saat elemen di-hover.</p>
+        </div>
+
+        <a href="#" class="link-hover">Hover link ini</a> &nbsp;
+        <button class="tombol">Hover tombol ini</button>
+
+        <hr>
+
+        <h2>10. CSS List Style (Tutorial)</h2>
+        <div class="kotak-info">
+            <p>Mengatur tampilan list/daftar.</p>
+        </div>
+
+        <ul class="list-kotak">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+
+        <ol class="list-angka">
+            <li>Belajar HTML dulu</li>
+            <li>Lanjut CSS</li>
+            <li>Kemudian JavaScript</li>
+        </ol>
+
+        <hr>
+
+        <h2>11. CSS Transition (Advanced)</h2>
+        <div class="kotak-info">
+            <p>Transition membuat perubahan style berjalan secara halus saat di-hover.</p>
+        </div>
+
+        <div class="box-transition">Hover saya!</div>
+
+        <hr>
+
+        <h2>12. CSS Animation (Advanced)</h2>
+        <div class="kotak-info">
+            <p>Animation untuk membuat elemen bergerak secara otomatis.</p>
+        </div>
+
+        <div class="box-animasi">Kotak bergerak!</div>
+
+        <hr>
+
+        <h2>13. CSS Flexbox</h2>
+        <div class="kotak-info">
+            <p>Flexbox digunakan untuk mengatur tata letak elemen secara fleksibel.</p>
+        </div>
+
+        <div class="flex-container">
+            <div class="flex-item">Item 1</div>
+            <div class="flex-item">Item 2</div>
+            <div class="flex-item">Item 3</div>
+        </div>
+
+        <hr>
+
+        <h2>14. CSS Grid</h2>
+        <div class="kotak-info">
+            <p>Grid untuk membuat layout kolom dan baris.</p>
+        </div>
+
+        <div class="grid-container">
+            <div class="grid-item">Kolom 1</div>
+            <div class="grid-item">Kolom 2</div>
+            <div class="grid-item">Kolom 3</div>
+            <div class="grid-item">Kolom 4</div>
+            <div class="grid-item">Kolom 5</div>
+            <div class="grid-item">Kolom 6</div>
+        </div>
+
+        <hr>
+
+        <h2>15. CSS Responsive Design</h2>
+        <div class="kotak-info">
+            <p>Responsive membuat halaman web terlihat bagus di semua ukuran layar (HP, tablet, laptop).</p>
+        </div>
+
+        <div class="resp-container">
+            <div class="resp-box">Kotak A</div>
+            <div class="resp-box">Kotak B</div>
+            <div class="resp-box">Kotak C</div>
+        </div>
+
+        <p style="text-align:center; color: gray; margin-top: 30px;">
+            &copy; 2026 - Tugas CSS Semester 2
+        </p>
+
+    </div>
+
+</body>
+</html>
